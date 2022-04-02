@@ -13,12 +13,13 @@ function IsAPrimeNum($num)
     return 1;
 }
 
-$primeOrNot = IsAPrimeNum(15);
+$num = 15;
+$primeOrNot = IsAPrimeNum($num);
 
 if ($primeOrNot == 1)
-    print ("The number is a prime number.");
+    print ($num . " is a prime number.");
 else if ($primeOrNot == 2)
     print ("1 is neither prime nor composite.");
 else
-    print ("The number is not a prime number.");   
+    print ($num . " is not a prime number.");   
 ?>
